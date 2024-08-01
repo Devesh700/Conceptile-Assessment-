@@ -19,7 +19,7 @@ const App = () => {
   useEffect(()=>{
     setTimeout(()=>{
       setshowReminder(true);
-    },1000)
+    },6000)
   },[])
   return (
     <>
