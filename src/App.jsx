@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { Route, Routes } from 'react-router-dom'
 import Menu from './Components/Menu'
-import ProfileHero from './Components/ProfileHero'
 import AllAvailableCourses from "./Pages/ViewAllCoures"
 import CourseList from './Pages/Courses/CourseList'
 import EducationHistory from './Pages/EducationHistory'
@@ -46,6 +45,9 @@ const App = () => {
           </div>
           <Menu />
         </div>
+
+
+        {/* Routes can be in seperate file if there are large number of routes */}
         <div className='custom-w-w-300px px-4'>
           <Routes>
             <Route path='/' element={<PersonalDetails />} />
